@@ -81,7 +81,9 @@
 }
 
 .ui-state-highlight{
-    border: 3px solid !important;
+    border: 3px solid black !important;
+    background: transparent;
+    color: black;
 }
 
 
