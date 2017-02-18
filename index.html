@@ -8,21 +8,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Loktra Task</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="style.css" rel="stylesheet">
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -56,45 +45,35 @@
 
     
 
-    <div class="container">
-
-	<!--<div class="col-md-12">
-		<button type="button" class="btn btn-primary" id="btn">Fetch the data</button>
-	</div> -->
-	
-     	<div class="col-md-4"  id="first">
-     		
-     				<h1 class="title">Title</h1>
-     				<p class="plot">Plot</p>
-     				<p class="poster">Poster</p> 	
-     				<p class="year">Year</p>
-     		<button type="button" class="btn btn-primary" id="bookmark">Bookmark it</button>
-
-     		
-
-     	</div>
-		<div class="col-md-12" id="star">
-				<fieldset class="rating">
-				    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-				    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-				    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-				    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-				    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-				</fieldset>
+  <div class="container">
+     	<div class="col-md-4 item" id="first">
+ 				<h1 class="title">Title</h1>
+ 				<p class="plot">Plot</p>
+ 				<p class="poster">Poster</p> 	
+ 				<p class="year">Year</p>
+			     <div class="col-md-12" id="star">
+      				<fieldset class="rating">
+      				    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+      				    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+      				    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+      				    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+      				    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+      				</fieldset>
+			     </div>
 		</div>
-        
-    
-     	
-
-     	
-
-    </div><!-- /.container -->
+  		<div class="col-md-4">
+  			<div class="" id="droppable">
+  				<h4 class="text-center">Drag here to bookmark it</h4>
+  			</div>
+  		</div>	
+  </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
   </body>

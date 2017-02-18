@@ -18,6 +18,10 @@
     float:left;
 }
 
+#star{
+    margin-left: -20px;
+}
+
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
    follow these rules. Every browser that supports :checked also supports :not(), so
    it doesn’t make the test unnecessarily selective */
@@ -66,4 +70,19 @@
     top:2px;
     left:2px;
 }
+
+#droppable{
+    border: 1px solid #ccc;
+    height: 540px;
+}
+
+.plot{
+    padding: 0px 60px 0px 0px;
+}
+
+.ui-state-highlight{
+    border: 3px solid !important;
+}
+
+
 

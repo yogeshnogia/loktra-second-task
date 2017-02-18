@@ -25,10 +25,18 @@ $form.on('submit', function(event){
 });
 
 
-
-
-
-
-
+$(document).ready(function(){
+	$( function() {
+    $( "#first" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "h4" )
+            .html( "Bookmarked!" );
+      }
+    });
+  } );
+});
 
 
