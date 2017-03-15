@@ -1,13 +1,11 @@
 var $form = $('form');
-
 var $first = $('#first');
-
 $form.on('submit', function(event){
 	var url, movie, data;
 
 	event.preventDefault();
 	movie = $form.find('input').val(); // have to pass the value first
-	url = 'http://www.omdbapi.com/?t=' + movie + '&type = movie&tomatoes = true';
+	url = 'https://www.omdbapi.com/?t=' + movie + '&type = movie&tomatoes = true';
 
 	$.ajax(url, {
 		complete: function(xml, status){
@@ -18,12 +16,14 @@ $form.on('submit', function(event){
 
 			$first.find('.poster').html('<img src= "' + data.Poster + '" />"');
 			$first.find('.year').text(data.Year);
-			$first.show();	
+			$first.show();
 		}
 	});
 
 });
 
+
+// Just for bookmark
 
 $(document).ready(function(){
 	$( function() {
@@ -38,5 +38,3 @@ $(document).ready(function(){
     });
   } );
 });
-
-
